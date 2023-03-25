@@ -1,10 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace ProjetFinal
 {
     public class TicTacToe
     {
-        private char[,] board; // grille de jeu
+        public char[,] board; // grille de jeu
         private char currentPlayer; // joueur en cours
         private bool gameover; // statut de la partie
 
@@ -41,6 +43,11 @@ namespace ProjetFinal
                 return;
             }
             currentPlayer = currentPlayer == 'X' ? 'O' : 'X'; 
+        }
+
+        public void PlaceSymbol(char player, int v1, int v2)
+        {
+            throw new NotImplementedException();
         }
 
         public char GetCurrentPlayer()
