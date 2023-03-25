@@ -6,13 +6,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <SpecFlowObsoleteCodeBehindFiles Remove="Features\Calculator - Copier.feature.cs" />
-    <SpecFlowObsoleteCodeBehindFiles Remove="Features\TicTacToe - Copier.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\MasterMind.feature.cs" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.0.0" />
-    <PackageReference Include="NUnit" Version="3.13.3" />
     <PackageReference Include="SpecFlow.Plus.LivingDocPlugin" Version="3.9.57" />
     <PackageReference Include="SpecFlow.xUnit" Version="3.9.22" />
     <PackageReference Include="xunit" Version="2.4.1" />
@@ -23,20 +21,17 @@
   <ItemGroup>
     <Folder Include="Drivers\" />
     <Folder Include="Hooks\" />
+    <Folder Include="Steps\" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ProjetFinal\ProjetFinal.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Update="Features\TicTacToe.feature.cs">
-      <DependentUpon>TicTacToe.feature</DependentUpon>
+    <Compile Update="Features\MasterMind.feature.cs">
+      <DependentUpon>%(Filename)</DependentUpon>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
-    <SpecFlowFeatureFiles Update="Features\TicTacToe.feature">
+    <SpecFlowFeatureFiles Update="Features\MasterMind.feature">
       <Visible>$(UsingMicrosoftNETSdk)</Visible>
       <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
     </SpecFlowFeatureFiles>

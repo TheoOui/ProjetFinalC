@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjetFinal", "ProjetFinal\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpecFlowTicTacToe.Specs", "SpecFlowTicTacToe.Specs\SpecFlowTicTacToe.Specs.csproj", "{D062F243-336B-4D66-8572-63B979D85F62}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasterMind", "MasterMind\MasterMind.csproj", "{09497133-DB85-4D6A-9482-186F5D0471AC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{D062F243-336B-4D66-8572-63B979D85F62}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D062F243-336B-4D66-8572-63B979D85F62}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D062F243-336B-4D66-8572-63B979D85F62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09497133-DB85-4D6A-9482-186F5D0471AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09497133-DB85-4D6A-9482-186F5D0471AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09497133-DB85-4D6A-9482-186F5D0471AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09497133-DB85-4D6A-9482-186F5D0471AC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
